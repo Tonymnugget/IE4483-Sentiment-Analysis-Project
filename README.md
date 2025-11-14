@@ -30,12 +30,14 @@ Two sentiment analysis pipelines using a Gemma-based transformer model and a TF-
 ## How to run
 
 1. Install dependencies using requirements.txt in tfidf_pipeline
-   pip install -r requirements.txt
+
+   > pip install -r requirements.txt
 
    Recommended to create virtual environment via vscode or miniconda
 
-3. Running the tfidf_pipeline
-   python main_tfidf.py --do_clean --use_layernorm --class_weighting --retrain_full --make_submission
+4. Running the tfidf_pipeline
+
+   > python main_tfidf.py --do_clean --use_layernorm --class_weighting --retrain_full --make_submission
 
 
 
