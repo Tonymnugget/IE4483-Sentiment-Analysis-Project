@@ -1,7 +1,7 @@
 # IE4483-Sentiment-Analysis-Project
 Two sentiment analysis pipelines using a Gemma-based transformer model and a TF-IDF + Feed-Forward Neural Network (MLP). Includes full preprocessing, hyperparameter tuning (Optuna), evaluation scripts, and reproducible training code.
 
-## Gemma-based Transformer Pipeline
+## gemma_pipeline
 
 * Custom dataset preprocessing (data_gemma.py)
 * Model definiton (model_gemma.py)
@@ -10,8 +10,10 @@ Two sentiment analysis pipelines using a Gemma-based transformer model and a TF-
 * Training start point (main_gemma.py)
 * Output directory for metrics and plots (gemma_eval folder)
 * Model Prediction results on test.json (submission_gemma.csv)
+* Labeled training reviews (train.json) 
+* Unlabeled test reviews (test.json)
 
-## TF-IDF Pipeline
+## tfidf_pipeline
 
 * Custom dataset preprocessing (data.py)
 * Custom TF-IDF script (features_tfidf.py)
@@ -22,12 +24,18 @@ Two sentiment analysis pipelines using a Gemma-based transformer model and a TF-
 * Package requirements for Venv (requirements.txt)
 * Output directory for metrics and plots (tfidf_eval folder)
 * Model Prediction results on test.json (submission.csv)
+* Labeled training reviews (train.json) 
+* Unlabeled test reviews (test.json)
 
-## Data 
+## How to run
 
-The repository includes:
+1. Install dependencies using requirements.txt in tfidf_pipeline
+   pip install -r requirements.txt
 
-train.json: Labeled training reviews
-test.json: Unlabeled test reviews
-Both pipelines consume the same dataset for fair comparison.
+   Recommended to create virtual environment via vscode or miniconda
+
+3. Running the tfidf_pipeline
+   python main_tfidf.py --do_clean --use_layernorm --class_weighting --retrain_full --make_submission
+
+
 
