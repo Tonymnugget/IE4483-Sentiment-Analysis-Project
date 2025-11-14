@@ -35,9 +35,13 @@ Two sentiment analysis pipelines using a Gemma-based transformer model and a TF-
 
    Recommended to create virtual environment via vscode or miniconda then install dependencies there
 
-4. Running the tfidf_pipeline
+2. Running the tfidf_pipeline
 
-   > python main_tfidf.py --do_clean --use_layernorm --class_weighting --retrain_full --make_submission
+   > python main_tfidf.py
+
+3. Running the gemma_pipeline
+
+   > python main_gemma.py
 
 
 
