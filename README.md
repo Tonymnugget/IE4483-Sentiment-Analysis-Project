@@ -33,7 +33,7 @@ Two sentiment analysis pipelines using a Gemma-based transformer model and a TF-
 
    > pip install -r requirements.txt
 
-   Recommended to create virtual environment via vscode or miniconda
+   Recommended to create virtual environment via vscode or miniconda then install dependencies there
 
 4. Running the tfidf_pipeline
 
